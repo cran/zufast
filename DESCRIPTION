@@ -1,0 +1,51 @@
+Package: zufast
+Title: Fast Portable 'C' Primitives for Parsing and Formatting Data
+Version: 0.1.0
+Authors@R: 
+    c(person("Pedro", "Baltazar", , "pedrobtz@gmail.com", role = c("aut", "cre", "cph")),
+      person("Bjoern", "Hoehrmann", role = "cph",
+             comment = "UTF-8 decoder state table in inst/include/zufast/utf8.h"),
+      person("Daniel", "Lemire", role = "cph",
+             comment = "fast_float, ported to C as ffc.h"),
+      person("João Paulo", "Magalhaes", role = "cph",
+             comment = "fast_float, ported to C as ffc.h"),
+      person("The fast_float authors", role = "cph",
+             comment = "fast_float, ported to C as ffc.h"),
+      person("Koleman", "Nix", role = "cph",
+             comment = "ffc.h, the C port of fast_float"),
+      person("Ulf", "Adams", role = "cph", comment = "Ryu"),
+      person("Yann", "Collet", role = "cph", comment = "xxHash"))
+Description: A header-only library of small, fast, portable 'C99' primitives
+    for converting external text and bytes into native values and back:
+    correctly rounded number parsing (from 'fast_float', through its 'C'
+    port 'ffc.h'), shortest round-trip number formatting (from 'Ryu'),
+    ISO 8601 dates and timestamps, booleans, universally unique identifiers
+    (UUIDs), hexadecimal and Base64, 'XXH3' hashing (from 'xxHash'),
+    half-precision floats, endian helpers and UTF-8 validation. Other
+    packages use it through 'LinkingTo' alone; the 'R' functions exist to
+    test, benchmark and demonstrate the 'C' layer.
+License: MIT + file LICENSE
+Copyright: See inst/COPYRIGHTS.
+URL: https://pedrobtz.github.io/zufast/,
+        https://github.com/pedrobtz/zufast
+BugReports: https://github.com/pedrobtz/zufast/issues
+Depends: R (>= 4.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-10-10 06:16:54 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  Bjoern Hoehrmann [cph] (UTF-8 decoder state table in
+    inst/include/zufast/utf8.h),
+  Daniel Lemire [cph] (fast_float, ported to C as ffc.h),
+  João Paulo Magalhaes [cph] (fast_float, ported to C as ffc.h),
+  The fast_float authors [cph] (fast_float, ported to C as ffc.h),
+  Koleman Nix [cph] (ffc.h, the C port of fast_float),
+  Ulf Adams [cph] (Ryu),
+  Yann Collet [cph] (xxHash)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-21 14:30:02 UTC
